@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="alternate icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">My Portfolio</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="tog-bug">
+                <button id="theme-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <!-- Circular Profile Image -->
+            <div class="profile-image-container">
+                <img src="Oluwadamilare.jpg" alt="Your Name" class="profile-image" />
+            </div>
+            <!-- Text Content -->
+            <h1>Hi, I'm <span>Ebire Oluwadamilare</span></h1>
+            <p class="subtitle">Aspiring Full-Stack Developer & Data Analyst</p>
+            <p class="description">
+                I build websites with clean code and thoughtful design.
+            </p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn primary">View My Work</a>
+                <a href="#contact" class="btn secondary">Let's Talk</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="Oluwadamilare.jpg" alt="Your Name" />
+                </div>
+                <div class="about-text">
+                    <p>
+                        I am a versatile person with understanding and practical experience of web
+                        development (HTML, CSS, JavaScript,,Jquery, React and frontend design) and user-focused
+                        solutions, aspiring to be a full-stack web developer and data analyst.</p>
+                    <p>I demonstrate strong problem-solving abilities and the ability to deliver high-quality results. I
+                        am adept at communication and collaboration, ensuring seamless project execution while striving
+                        for innovative digital experiences.</p>
+                    <p>
+                        When I'm not coding, I enjoy watching movies, playing football, exploring new design trends, and
+                        hanging with friends.
+                    </p>
+                    <div class="skills">
+                        <h4>What I Do:</h4>
+                        <ul>
+                            <li><strong>Frontend:</strong> React, Javascript, CSS</li>
+                            <!-- <li><strong>Backend:</strong> Node.js, Express, Firebase</li>
+                            <li><strong>Design:</strong> Figma, Adobe XD, Responsive UI</li> -->
+                        </ul>
+                    </div>
+                    <a href="Curriculum Vitae (3).pdf" class="btn primary" target="_blank">Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Work</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Smart Agriculture System</h3>
+                        <p>
+                            Engineered a website 'Agrotech' for Smart Agriculture System using IoT sensors for efficient
+                            farming
+                        </p>
+                        <div class="tech">HTML • JavaScript • CSS • PHP</div>
+                        <a href="project.html" class="view-project">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Data Analysis</h3>
+                        <p>
+                            Descriptive and statistical analysis of ambigious datasets.
+                        </p>
+                        <div class="tech">IBM SPSS Statistics • RStudio • Dbeaver</div>
+                        <a href="daproject.html" class="view-project">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Coming Soon...</h3>
+                        <p>
+                            Next project under construction. Please exercise patience while I cook uo something good.
+                        </p>
+                        <div class="tech">God • Money • Friends</div>
+                        <a href="#" target="_blank" class="view-project">
+                            View Project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">
+                Have a project in mind? Let's collab.
+            </p>
+
+            <!-- Contact Form -->
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required />
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required />
+                </div>
+                <div class="form-group">
+                    <textarea name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                </div>
+                <button type="submit" class="btn primary large">Send Message</button>
+            </form>
+
+            <!-- Dedicated message container (won't be removed) -->
+            <div id="form-message"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Ebire. At your service.</p>
+            <div class="social-links">
+                <a href="https://github.com/debire" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/oluwadamilareebire" aria-label="LinkedIn"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://x.com/d_ebire" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/_debiree/" aria-label="Instagram"><i
+                        class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
