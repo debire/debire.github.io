@@ -166,6 +166,47 @@ body {
     /* Smooth animation for color & transform */
 }
 
+.github-rect-btn {
+  position: absolute;
+  top: 95px;           /* Below fixed navbar */
+  right: 20px;         /* Distance from right edge */
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: #4361ee; /* Your brand blue */
+  color: white !important;
+  padding: 0.7rem 1.2rem;
+  border-radius: 15px; /* Smooth rounded corners */
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  box-shadow: 0 4px 12px rgba(67, 97, 238, 0.2);
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.github-rect-btn:hover {
+  background: #3a56d4;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(67, 97, 238, 0.3);
+}
+
+.github-rect-btn i {
+  font-size: 1.1rem;
+}
+
+.github-rect-btn span {
+  white-space: nowrap;
+}
+
+/* Dark mode support */
+.dark-mode .github-rect-btn {
+  background: #5e72e4;
+}
+
+.dark-mode .github-rect-btn:hover {
+  background: #4b63dd;
+}
 /* Hero Section */
 .hero {
     height: 100vh;
@@ -674,10 +715,6 @@ p {
         margin-left: 0.5rem;
         /* Was probably 1rem or more */
     }
-}
-
-/* Improve spacing on mobile */
-@media (max-width: 768px) {
     .profile-image-container {
         width: 120px;
         height: 120px;
@@ -691,4 +728,15 @@ p {
     .subtitle {
         font-size: 1.3rem;
     }
+    .github-rect-btn {
+    top: 105px;
+    right: 10px;
+    font-size: 0.85rem;
+    padding: 0.5rem 0.6rem;
+    border-radius: 10px;
+  }
+
+  .github-rect-btn i {
+    font-size: 1rem;
+  }
 }
