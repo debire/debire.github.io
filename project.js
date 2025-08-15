@@ -1,22 +1,116 @@
- // Reuse dark mode logic
-    const themeToggle = document.getElementById('theme-toggle');
-    const body = document.body;
+<!DOCTYPE html>
+<html lang="en">
 
-    themeToggle.addEventListener('click', () => {
-      body.classList.toggle('dark-mode');
-      if (body.classList.contains('dark-mode')) {
-        themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
-        localStorage.setItem('theme', 'dark');
-      } else {
-        themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
-        localStorage.setItem('theme', 'light');
-      }
-    });
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Showcase - Your Name</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="alternate icon" href="favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+</head>
 
-    // Load saved theme
-    document.addEventListener('DOMContentLoaded', () => {
-      if (localStorage.getItem('theme') === 'dark') {
-        body.classList.add('dark-mode');
-        themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
-      }
-    });
+<body class="project-page">
+  <a href="https://github.com/debire/smart_agriculture_system" target="_blank" class="github-rect-btn">
+    <i class="fab fa-github"></i>
+    <span>View on GitHub</span>
+  </a>
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">My Portfolio</a>
+      <button id="theme-toggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Project Content -->
+  <main class="project-container">
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+      <span class="close">&times;</span>
+      <img id="lightbox-img" src="" alt="Full-size screenshot">
+    </div>
+    <a href="index.html" class="back-link">
+      <i class="fas fa-arrow-left"></i> Back to Portfolio
+    </a>
+
+    <div class="project-header">
+      <h1>Project: Smart Agriculture System</h1>
+      <p>
+        Engineered a website 'Agrotech' for Smart Agriculture System using IoT sensors for efficient farming.
+        Built with HTML, JavaScript, CSS and PHP.
+      </p>
+    </div>
+
+    <div class="screenshots">
+      <div class="screenshot-card">
+        <img src="home-dashboard.png" alt="Dashboard Overview" />
+        <div class="caption">Home Page</div>
+      </div>
+
+      <div class="screenshot-card">
+        <img src="table-display.png" alt="Inventory Management" />
+        <div class="caption">Table mode data display- fetched using API keys and displayed in tabular form</div>
+      </div>
+
+      <div class="screenshot-card">
+        <img src="chart-display.png" alt="Order Tracking" />
+        <div class="caption">Chart mode data display- fetched using API keys and displayed in chart form</div>
+      </div>
+
+      <div class="screenshot-card">
+        <img src="card-display.png" alt="User Roles & Permissions" />
+        <div class="caption">Card mode data display- fetched using API keys and displayed in card form</div>
+      </div>
+
+      <div class="screenshot-card">
+        <img src="signup-page.png" alt="Mobile Responsive View" />
+        <div class="caption">Sign Up Page- myPHPAdmin used to store user credentials</div>
+      </div>
+
+      <div class="screenshot-card">
+        <img src="login-page.png" alt="Analytics Charts" />
+        <div class="caption">Log In Page- myPHPAdmin used to store user credentials</div>
+      </div>
+    </div>
+    <br>
+    <!-- GitHub Button -->
+    <a href="https://github.com/debire/smart_agriculture_system" style="text-decoration: none; color: #3a56d4;"
+      target="_blank" class="github-button">
+      <i class="fab fa-github"></i>
+      <span>View Source on GitHub</span>
+    </a>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Ebire. At your service</p>
+    </div>
+  </footer>
+
+  <script src="project.js"></script>
+</body>
+
+</html>
