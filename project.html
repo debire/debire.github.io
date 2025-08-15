@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Project Showcase - Your Name</title>
+  <title>Smart Agriculture System</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
@@ -31,9 +31,9 @@
 
 <body class="project-page">
   <a href="https://github.com/debire/smart_agriculture_system" target="_blank" class="github-rect-btn">
-  <i class="fab fa-github"></i>
-  <span>View on GitHub</span>
-</a>
+    <i class="fab fa-github"></i>
+    <span>View on GitHub</span>
+  </a>
   <!-- Navigation -->
   <nav id="navbar">
     <div class="nav-container">
@@ -46,6 +46,11 @@
 
   <!-- Project Content -->
   <main class="project-container">
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+      <span class="close">&times;</span>
+      <img id="lightbox-img" src="" alt="Full-size screenshot">
+    </div>
     <a href="index.html" class="back-link">
       <i class="fas fa-arrow-left"></i> Back to Portfolio
     </a>
@@ -59,7 +64,6 @@
     </div>
 
     <div class="screenshots">
-      <!-- Replace img/src with your screenshots -->
       <div class="screenshot-card">
         <img src="home-dashboard.png" alt="Dashboard Overview" />
         <div class="caption">Home Page</div>
@@ -92,7 +96,8 @@
     </div>
     <br>
     <!-- GitHub Button -->
-    <a href="https://github.com/debire/smart_agriculture_system" style="text-decoration: none; color: #3a56d4;" target="_blank" class="github-button">
+    <a href="https://github.com/debire/smart_agriculture_system" style="text-decoration: none; color: #3a56d4;"
+      target="_blank" class="github-button">
       <i class="fab fa-github"></i>
       <span>View Source on GitHub</span>
     </a>
